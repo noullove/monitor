@@ -1,0 +1,9 @@
+[Unit]
+Description=external monitor hotplug
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hotplug_monitor.sh
+
+[Install]
+WantedBy=multi-user.target
